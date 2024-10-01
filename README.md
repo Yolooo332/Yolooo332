@@ -6,6 +6,6 @@
 
 - I primarily work with : `.vue`, `.tsx`, `.html`, `.cpp`, `.lua`.
 - I'm currently focusing on improving my skills in `C languages`.
-- 
+
 
 ![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=313tabitfy4bzfbdsrqvuhcezxla)
