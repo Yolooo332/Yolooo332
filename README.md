@@ -2,7 +2,7 @@
 **Hello there 👋**
 
 `Full-Stack Web Developer`<br>
-`ACS CTI Student`
+`@Politehnica Bucuresti - Automatica si Calculatoare - Student`
 
 - I primarily work with : `.vue`, `.tsx`, `.html`, `.cpp`, `.lua`, `.java`, `.js`.
 - I'm currently focusing on improving my skills in `C languages`. <br>
