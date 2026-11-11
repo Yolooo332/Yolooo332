@@ -4,9 +4,10 @@
 
 </div>
 
+---
+
 <div align="center">
 
-**Machine learning systems**, **self-hosted infrastructure** and **security**, on Linux.<br>
 Student at **Politehnica București**, **Automatică și Calculatoare** · **Bucharest, Romania**
 
 </div>
@@ -62,6 +63,8 @@ Student at **Politehnica București**, **Automatică și Calculatoare** · **Buc
 </tr>
 </table>
 
+---
+
 <div align="center">
 <img src="assets/stack.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
 </div>
@@ -93,5 +96,7 @@ Student at **Politehnica București**, **Automatică și Calculatoare** · **Buc
   <img src="https://img.shields.io/badge/mysql-0d1117?style=flat-square&logo=mysql&logoColor=00a3e0" alt="MySQL">
   <img src="https://img.shields.io/badge/postgres-0d1117?style=flat-square&logo=postgresql&logoColor=6d9fd8" alt="PostgreSQL">
 </p>
+
+---
 
 <sub>The animations are drawn with letters, numbers and symbols by a small Python renderer in <a href="art/">art/</a>, a technique inspired by the ASCII code art of JIN2 (<a href="https://instagram.com/jin_22ee">@jin_22ee</a>).</sub>
