@@ -13,15 +13,26 @@ NAME
 SYNOPSIS
        calin [--front vue|tsx|html] [--back js|ts] [--db sql|mongo]
              [--low-level c|cpp|lua|java] [--city bucharest]
-
-DESCRIPTION
-       Builds for the web end to end: from the .vue component in the
-       browser, through the api, down to the rows in the database.
-       Studies Automatica si Calculatoare (ACS) at UPB, which is where
-       the C, the C++ and the control theory come from.
 ```
 
-## OPTIONS
+<p align="center"><img src="assets/h-description.svg" alt="Description" width="100%"></p>
+
+<div align="center">
+
+**Full-stack web developer**, from the `.vue` component in the browser down to the row in the database.<br>
+Student at **Politehnica București**, *Automatică și Calculatoare*.
+
+<table>
+  <tr>
+    <td align="center" width="260"><sub><i>based in</i></sub><br><b>Bucharest, Romania</b></td>
+    <td align="center" width="260"><sub><i>writes mostly</i></sub><br><code>.vue</code> <code>.tsx</code> <code>.html</code> <code>.js</code><br><code>.cpp</code> <code>.lua</code> <code>.java</code></td>
+    <td align="center" width="260"><sub><i>currently</i></sub><br><b>getting sharper at C</b></td>
+  </tr>
+</table>
+
+</div>
+
+<p align="center"><img src="assets/h-options.svg" alt="Options" width="100%"></p>
 
 <div align="center">
 <img src="assets/stack.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
@@ -48,13 +59,13 @@ DESCRIPTION
   <img src="https://img.shields.io/badge/postgres-0d1117?style=flat-square&logo=postgresql&logoColor=6d9fd8" alt="PostgreSQL">
 </p>
 
-## PIPELINE
+<p align="center"><img src="assets/h-pipeline.svg" alt="Pipeline" width="100%"></p>
 
 <div align="center">
 <img src="assets/flow.gif" alt="Animated ASCII diagram: browser to frontend to api to database, with request packets travelling right and responses travelling back" width="100%">
 </div>
 
-## FILES
+<p align="center"><img src="assets/h-files.svg" alt="Files" width="100%"></p>
 
 <pre>
 <b>~/yolooo332</b>
@@ -65,7 +76,7 @@ DESCRIPTION
 └── <a href="https://github.com/Yolooo332/SDA-Midterm">SDA-Midterm/</a>          data structures &amp; algorithms midterm · C
 </pre>
 
-## BUGS
+<p align="center"><img src="assets/h-bugs.svg" alt="Bugs" width="100%"></p>
 
 <div align="center">
 <img src="assets/scope.gif" alt="ASCII oscilloscope: a step response rings with 60 percent overshoot on the first tuning pass, then settles cleanly on the second" width="100%">
@@ -73,7 +84,7 @@ DESCRIPTION
 
 Known issue: still tuning the C. The first pass rings and the second one settles. Work in progress.
 
-## SEE ALSO
+<p align="center"><img src="assets/h-see-also.svg" alt="See also" width="100%"></p>
 
 ```text
 location     bucharest, romania

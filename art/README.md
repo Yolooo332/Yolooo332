@@ -12,6 +12,7 @@ fades each frame into a trail, adds two blur passes for bloom and writes a GIF.
 | `stack.py` | languages orbiting a shaded core, like an atom | lit sphere field · 3D orbits splatted with a depth buffer · comet tails |
 | `flow.py`  | browser → frontend → api → database request flow | box / wire / packet diagram primitives · glow fields |
 | `scope.py` | oscilloscope, two PID tuning passes | analytic step response · slope glyphs · phosphor trail |
+| `dividers.py` | cursive section headings that write themselves | HarfBuzz shaping → SVG paths · stroke-dash draw-on |
 
 ## Rebuild
 
@@ -25,3 +26,9 @@ python asciianim.py flow.py --term                      # play it in the termina
 `asciianim.py` is the renderer engine.
 The technique is inspired by the ASCII code art of JIN2 ([@jin_22ee](https://instagram.com/jin_22ee)).
 All scene code here is original.
+
+## Section dividers
+
+`dividers.py` writes the cursive section headings (`assets/h-*.svg`). Each word
+is shaped with HarfBuzz from the Parisienne font (SIL OFL), stored as SVG paths,
+and drawn on with a CSS stroke animation, so it needs no web fonts.
