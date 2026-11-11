@@ -1,14 +1,88 @@
-<!--<img alt="Coding" width="400" src="https://cdn.discordapp.com/attachments/1137824512197541959/1290755926927740949/7wvhkox5u2c8pgh6ndtb.webp?ex=66fd9da2&is=66fc4c22&hm=427097b7c2e223c6cce340c981f64849512d551490fe59c608bfb8743efac1a1&"> -->
-**Hello there 👋**
+<div align="center">
 
-`Full-Stack Web Developer`<br>
-`@Politehnica Bucuresti - Automatica si Calculatoare - Student`
+<img src="assets/hero.gif" alt="CALIN, rendered as animated ASCII: the name ignites under a scan beam, holds, then burns off into embers" width="100%">
 
-- I primarily work with : `.vue`, `.tsx`, `.html`, `.cpp`, `.lua`, `.java`, `.js`.
-- I'm currently focusing on improving my skills in `C languages`. <br>
+</div>
 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=plastic&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=plastic&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=plastic&logo=csharp&logoColor=white)  ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=plastic&logo=lua&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=plastic&logo=tailwind-css&logoColor=white) ![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=plastic&logo=vuedotjs&logoColor=%234FC08D) ![Vuetify](https://img.shields.io/badge/Vuetify-1867C0?style=plastic&logo=vuetify&logoColor=AEDDFF) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=plastic&logo=jquery&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=plastic&logo=bootstrap&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=plastic&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=plastic&logo=postgresql&logoColor=white)
+```text
+CALIN(1)                     Yolooo332 User Manual                     CALIN(1)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Yolooo332&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+NAME
+       calin - full-stack web developer, student at Politehnica Bucuresti
 
-[![](https://visitcount.itsvg.in/api?id=Yolooo332&icon=9&color=3)](https://visitcount.itsvg.in)
+SYNOPSIS
+       calin [--front vue|tsx|html] [--back js|ts] [--db sql|mongo]
+             [--low-level c|cpp|lua|java] [--city bucharest]
+
+DESCRIPTION
+       Builds for the web end to end: from the .vue component in the
+       browser, through the api, down to the rows in the database.
+       Studies Automatica si Calculatoare (ACS) at UPB, which is where
+       the C, the C++ and the control theory come from.
+```
+
+## OPTIONS
+
+<div align="center">
+<img src="assets/stack.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
+</div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/c-0d1117?style=flat-square&logo=c&logoColor=a8b9cc" alt="C">
+  <img src="https://img.shields.io/badge/c++-0d1117?style=flat-square&logo=cplusplus&logoColor=f34b7d" alt="C++">
+  <img src="https://img.shields.io/badge/c%23-0d1117?style=flat-square&logo=dotnet&logoColor=9b72e8" alt="C#">
+  <img src="https://img.shields.io/badge/lua-0d1117?style=flat-square&logo=lua&logoColor=8a94ff" alt="Lua">
+  <img src="https://img.shields.io/badge/java-0d1117?style=flat-square&logo=openjdk&logoColor=f89820" alt="Java">
+  <img src="https://img.shields.io/badge/javascript-0d1117?style=flat-square&logo=javascript&logoColor=f7df1e" alt="JavaScript">
+  <img src="https://img.shields.io/badge/typescript-0d1117?style=flat-square&logo=typescript&logoColor=4f9cf0" alt="TypeScript">
+  <img src="https://img.shields.io/badge/html5-0d1117?style=flat-square&logo=html5&logoColor=e34c26" alt="HTML5">
+  <img src="https://img.shields.io/badge/css3-0d1117?style=flat-square&logo=css&logoColor=4f9cf0" alt="CSS3">
+  <br>
+  <img src="https://img.shields.io/badge/vue.js-0d1117?style=flat-square&logo=vuedotjs&logoColor=41b883" alt="Vue.js">
+  <img src="https://img.shields.io/badge/vuetify-0d1117?style=flat-square&logo=vuetify&logoColor=4f9cf0" alt="Vuetify">
+  <img src="https://img.shields.io/badge/tailwindcss-0d1117?style=flat-square&logo=tailwindcss&logoColor=22d3ee" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/bootstrap-0d1117?style=flat-square&logo=bootstrap&logoColor=8b5cf6" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/jquery-0d1117?style=flat-square&logo=jquery&logoColor=4f9cf0" alt="jQuery">
+  <img src="https://img.shields.io/badge/mongodb-0d1117?style=flat-square&logo=mongodb&logoColor=47a248" alt="MongoDB">
+  <img src="https://img.shields.io/badge/mysql-0d1117?style=flat-square&logo=mysql&logoColor=00a3e0" alt="MySQL">
+  <img src="https://img.shields.io/badge/postgres-0d1117?style=flat-square&logo=postgresql&logoColor=6d9fd8" alt="PostgreSQL">
+</p>
+
+## PIPELINE
+
+<div align="center">
+<img src="assets/flow.gif" alt="Animated ASCII diagram: browser to frontend to api to database, with request packets travelling right and responses travelling back" width="100%">
+</div>
+
+## FILES
+
+<pre>
+<b>~/yolooo332</b>
+├── <a href="https://github.com/Yolooo332/cpp">cpp/</a>                  C++
+├── <a href="https://github.com/Yolooo332/anomaly-detection">anomaly-detection/</a>    kernel regression &amp; anomaly detection · MATLAB · fork
+├── <a href="https://github.com/Yolooo332/Tema3">Tema3/</a>                PCLP1 · C
+├── <a href="https://github.com/Yolooo332/SDA-Tema1">SDA-Tema1/</a>            data structures &amp; algorithms · C
+└── <a href="https://github.com/Yolooo332/SDA-Midterm">SDA-Midterm/</a>          data structures &amp; algorithms midterm · C
+</pre>
+
+## BUGS
+
+<div align="center">
+<img src="assets/scope.gif" alt="ASCII oscilloscope: a step response rings with 60 percent overshoot on the first tuning pass, then settles cleanly on the second" width="100%">
+</div>
+
+Known issue: still tuning the C. The first pass rings and the second one settles. Work in progress.
+
+## SEE ALSO
+
+```text
+location     bucharest, romania
+instagram    @f3.calin
+school       politehnica bucuresti · automatica si calculatoare
+```
+
+<sub>Every frame on this page is drawn with letters, numbers and symbols by a small Python field renderer in <a href="art/">art/</a>. The technique is inspired by the ASCII code art of JIN2 (<a href="https://instagram.com/jin_22ee">@jin_22ee</a>).</sub>
+
+```text
+Yolooo332                        2026-11-12                            CALIN(1)
+```
