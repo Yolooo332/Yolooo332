@@ -4,12 +4,10 @@
 
 </div>
 
-<p align="center"><img src="assets/h-description.svg" alt="Description" width="100%"></p>
-
 <div align="center">
 
 **Machine learning systems**, **self-hosted infrastructure** and **security**, on Linux.<br>
-<sub>Student at Politehnica București, <i>Automatică și Calculatoare</i> · Bucharest, Romania</sub>
+Student at **Politehnica București**, **Automatică și Calculatoare** · **Bucharest, Romania**
 
 </div>
 
@@ -63,8 +61,6 @@
 </td>
 </tr>
 </table>
-
-<p align="center"><img src="assets/h-options.svg" alt="Options" width="100%"></p>
 
 <div align="center">
 <img src="assets/stack.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
