@@ -4,10 +4,10 @@
 import numpy as np
 from asciianim import *
 
-NAME = "CALIN"
+NAME = "YOLOOO"
 PROMPT = "yolooo332@github:~$ "
 CMD = "./hello --render"
-SUB = "full-stack web developer  ·  automatica & calculatoare @ UPB  ·  bucharest, ro"
+SUB = "ml systems  ·  self-hosted infra  ·  linux  ·  security  ·  bucharest, ro"
 
 #          indigo     violet     cyan       mint       white      dim        pink       star
 PALETTE = ["#4338ca", "#8b5cf6", "#22d3ee", "#5eead4", "#effcff", "#6e7681", "#ff5fa2", "#c9d1d9"]
@@ -22,14 +22,14 @@ BURN = (6.5, 7.75)      # second pass burns everything off
 
 
 def setup(g):
-    M = text_field(g, NAME, height=0.54, center=(0.0, -0.1), font="bold", spacing=0.1)
+    M = text_field(g, NAME, height=0.5, center=(0.0, -0.1), font="monobold")
     soft = blur_field(M, 0.9)
     gy, gx = np.gradient(soft)
     rows = np.flatnonzero(M.max(axis=1) > 0.3)
     cols = np.flatnonzero(M.max(axis=0) > 0.3)
     g.cache.update(
         M=M,
-        halo=text_field(g, NAME, height=0.54, center=(0.0, -0.1), font="bold", spacing=0.1, blur=14),
+        halo=text_field(g, NAME, height=0.5, center=(0.0, -0.1), font="monobold", blur=14),
         edge=(M > 0.1) & (M < 0.7) & (np.hypot(gx, gy) > 0.02),
         edge_char=tangent(-gy, gx),
         under=rows.max() + 2,

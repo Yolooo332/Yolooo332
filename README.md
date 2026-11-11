@@ -1,36 +1,68 @@
 <div align="center">
 
-<img src="assets/hero.gif" alt="CALIN, rendered as animated ASCII: the name ignites under a scan beam, holds, then burns off into embers" width="100%">
+<img src="assets/hero.gif" alt="YOLOOO, rendered as animated ASCII in JetBrains Mono: the name ignites under a scan beam, holds, then burns off into embers" width="100%">
 
 </div>
-
-```text
-CALIN(1)                     Yolooo332 User Manual                     CALIN(1)
-
-NAME
-       calin - full-stack web developer, student at Politehnica Bucuresti
-
-SYNOPSIS
-       calin [--front vue|tsx|html] [--back js|ts] [--db sql|mongo]
-             [--low-level c|cpp|lua|java] [--city bucharest]
-```
 
 <p align="center"><img src="assets/h-description.svg" alt="Description" width="100%"></p>
 
 <div align="center">
 
-**Full-stack web developer**, from the `.vue` component in the browser down to the row in the database.<br>
-Student at **Politehnica București**, *Automatică și Calculatoare*.
-
-<table>
-  <tr>
-    <td align="center" width="260"><sub><i>based in</i></sub><br><b>Bucharest, Romania</b></td>
-    <td align="center" width="260"><sub><i>writes mostly</i></sub><br><code>.vue</code> <code>.tsx</code> <code>.html</code> <code>.js</code><br><code>.cpp</code> <code>.lua</code> <code>.java</code></td>
-    <td align="center" width="260"><sub><i>currently</i></sub><br><b>getting sharper at C</b></td>
-  </tr>
-</table>
+**Machine learning systems**, **self-hosted infrastructure** and **security**, on Linux.<br>
+<sub>Student at Politehnica București, <i>Automatică și Calculatoare</i> · Bucharest, Romania</sub>
 
 </div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<b>ML systems</b><br>
+<sub><i>from an LLM training project, launching soon</i></sub>
+
+- **Pipeline-parallel fine-tuning**: one model split by layers across GPUs in different machines, with 1F1B scheduling so the cards overlap instead of taking turns
+- **QLoRA with PEFT + bitsandbytes 4-bit**, and per-GPU precision (bf16, fp16, fp32) with one dynamic loss scale for the whole chain
+- **A memory-first planner** that estimates VRAM per stage and picks the split where the slowest GPU is fastest, using each card's measured speed
+- **Streaming layers from pinned RAM**: a 32B model fine-tuned on a single 12 GB RTX 5070
+- **0.92× Unsloth's per-GPU speed** on a 7B, with 16-bit autocast and per-layer `torch.compile`
+- **A custom framed TCP protocol** for activations and gradients, plus tests showing split training gives the same losses and LoRA weights as the unsplit model
+
+</td>
+<td width="50%" valign="top">
+
+<b>Infra & AI agents</b><br>
+<sub><i>from my self-hosted home cluster, launching soon</i></sub>
+
+- **A cluster for people and coding agents**: a Bun + TypeScript server on Postgres that schedules jobs onto GPU and CPU workers across my machines
+- **Scheduling with GPU-memory requests**, labels and taints, hyperparameter grid sweeps, multi-step pipelines and cron
+- **Sandboxed runs** in Docker or Podman, with workers running as self-updating systemd user units
+- **Agent orchestration**: Claude Code and Codex agents take tasks from a board, push their work, get an AI review, and auto-fix failed checks and merge conflicts
+- **An MCP server and a knowledge base** so agents can search past runs and notes
+- **CI before main**: lint, typing and tests run in a sandbox, merges are gated on review, and the repo is mirrored from Gitea to GitHub
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<b>Security</b>
+
+- Encrypted secrets, injected into each run and hidden from its logs
+- Invite-based enrollment for workers and people, behind Cloudflare Access
+- Encrypted backups of the cluster's state
+- Threat modelling of the apps I build
+
+</td>
+<td width="50%" valign="top">
+
+<b>Linux</b>
+
+- Fedora as my daily driver, with Linux servers and workers running the home cluster
+- Operating system modifications and new desktop features, coming to this profile soon
+
+</td>
+</tr>
+</table>
 
 <p align="center"><img src="assets/h-options.svg" alt="Options" width="100%"></p>
 
@@ -39,6 +71,13 @@ Student at **Politehnica București**, *Automatică și Calculatoare*.
 </div>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/python-0d1117?style=flat-square&logo=python&logoColor=ffd43b" alt="Python">
+  <img src="https://img.shields.io/badge/pytorch-0d1117?style=flat-square&logo=pytorch&logoColor=ee4c2c" alt="PyTorch">
+  <img src="https://img.shields.io/badge/hugging%20face-0d1117?style=flat-square&logo=huggingface&logoColor=ffd21e" alt="Hugging Face">
+  <img src="https://img.shields.io/badge/bun-0d1117?style=flat-square&logo=bun&logoColor=fbf0df" alt="Bun">
+  <img src="https://img.shields.io/badge/docker-0d1117?style=flat-square&logo=docker&logoColor=2496ed" alt="Docker">
+  <img src="https://img.shields.io/badge/linux-0d1117?style=flat-square&logo=linux&logoColor=fcc624" alt="Linux">
+  <br>
   <img src="https://img.shields.io/badge/c-0d1117?style=flat-square&logo=c&logoColor=a8b9cc" alt="C">
   <img src="https://img.shields.io/badge/c++-0d1117?style=flat-square&logo=cplusplus&logoColor=f34b7d" alt="C++">
   <img src="https://img.shields.io/badge/c%23-0d1117?style=flat-square&logo=dotnet&logoColor=9b72e8" alt="C#">
@@ -59,41 +98,4 @@ Student at **Politehnica București**, *Automatică și Calculatoare*.
   <img src="https://img.shields.io/badge/postgres-0d1117?style=flat-square&logo=postgresql&logoColor=6d9fd8" alt="PostgreSQL">
 </p>
 
-<p align="center"><img src="assets/h-pipeline.svg" alt="Pipeline" width="100%"></p>
-
-<div align="center">
-<img src="assets/flow.gif" alt="Animated ASCII diagram: browser to frontend to api to database, with request packets travelling right and responses travelling back" width="100%">
-</div>
-
-<p align="center"><img src="assets/h-files.svg" alt="Files" width="100%"></p>
-
-<pre>
-<b>~/yolooo332</b>
-├── <a href="https://github.com/Yolooo332/cpp">cpp/</a>                  C++
-├── <a href="https://github.com/Yolooo332/anomaly-detection">anomaly-detection/</a>    kernel regression &amp; anomaly detection · MATLAB · fork
-├── <a href="https://github.com/Yolooo332/Tema3">Tema3/</a>                PCLP1 · C
-├── <a href="https://github.com/Yolooo332/SDA-Tema1">SDA-Tema1/</a>            data structures &amp; algorithms · C
-└── <a href="https://github.com/Yolooo332/SDA-Midterm">SDA-Midterm/</a>          data structures &amp; algorithms midterm · C
-</pre>
-
-<p align="center"><img src="assets/h-bugs.svg" alt="Bugs" width="100%"></p>
-
-<div align="center">
-<img src="assets/scope.gif" alt="ASCII oscilloscope: a step response rings with 60 percent overshoot on the first tuning pass, then settles cleanly on the second" width="100%">
-</div>
-
-Known issue: still tuning the C. The first pass rings and the second one settles. Work in progress.
-
-<p align="center"><img src="assets/h-see-also.svg" alt="See also" width="100%"></p>
-
-```text
-location     bucharest, romania
-instagram    @f3.calin
-school       politehnica bucuresti · automatica si calculatoare
-```
-
-<sub>Every frame on this page is drawn with letters, numbers and symbols by a small Python field renderer in <a href="art/">art/</a>. The technique is inspired by the ASCII code art of JIN2 (<a href="https://instagram.com/jin_22ee">@jin_22ee</a>).</sub>
-
-```text
-Yolooo332                        2026-11-12                            CALIN(1)
-```
+<sub>The animations are drawn with letters, numbers and symbols by a small Python renderer in <a href="art/">art/</a>, a technique inspired by the ASCII code art of JIN2 (<a href="https://instagram.com/jin_22ee">@jin_22ee</a>).</sub>
