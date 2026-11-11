@@ -8,7 +8,7 @@
 
 <div align="center">
 
-Student at **Politehnica București**, **Automatică și Calculatoare** · **Bucharest, Romania**
+Student @ ACS, Politehnica Bucuresti
 
 </div>
 
@@ -16,28 +16,28 @@ Student at **Politehnica București**, **Automatică și Calculatoare** · **Buc
 <tr>
 <td width="50%" valign="top">
 
-<b>ML systems</b><br>
-<sub><i>from an LLM training project, launching soon</i></sub>
+<b>ML Systems Knowledge</b>
 
-- **Pipeline-parallel fine-tuning**: one model split by layers across GPUs in different machines, with 1F1B scheduling so the cards overlap instead of taking turns
-- **QLoRA with PEFT + bitsandbytes 4-bit**, and per-GPU precision (bf16, fp16, fp32) with one dynamic loss scale for the whole chain
-- **A memory-first planner** that estimates VRAM per stage and picks the split where the slowest GPU is fastest, using each card's measured speed
-- **Streaming layers from pinned RAM**: a 32B model fine-tuned on a single 12 GB RTX 5070
-- **0.92× Unsloth's per-GPU speed** on a 7B, with 16-bit autocast and per-layer `torch.compile`
-- **A custom framed TCP protocol** for activations and gradients, plus tests showing split training gives the same losses and LoRA weights as the unsplit model
+- **Pipeline parallelism**: splitting a model by layers across GPUs on different machines, 1F1B scheduling, keeping the pipeline bubble small
+- **Parameter-efficient fine-tuning**: LoRA and QLoRA with PEFT, 4-bit quantization with bitsandbytes
+- **Mixed precision**: bf16, fp16 and fp32 by GPU generation, dynamic loss scaling, fp32 residual streams
+- **GPU memory planning**: budgeting weights, LoRA and optimizer state and activations per stage, gradient checkpointing, streaming layers from pinned RAM to train models bigger than VRAM
+- **Training performance**: autocast, `torch.compile`, measuring throughput against baselines like Unsloth
+- **SFT data**: chat templates, completion-only loss masking, sequence packing with per-document attention
+- **Distributed correctness**: sending activations and gradients over TCP, gradient clipping across stages, checking split training against the unsplit model
 
 </td>
 <td width="50%" valign="top">
 
-<b>Infra & AI agents</b><br>
-<sub><i>from my self-hosted home cluster, launching soon</i></sub>
+<b>Infra & AI Agents Knowledge</b>
 
-- **A cluster for people and coding agents**: a Bun + TypeScript server on Postgres that schedules jobs onto GPU and CPU workers across my machines
-- **Scheduling with GPU-memory requests**, labels and taints, hyperparameter grid sweeps, multi-step pipelines and cron
-- **Sandboxed runs** in Docker or Podman, with workers running as self-updating systemd user units
-- **Agent orchestration**: Claude Code and Codex agents take tasks from a board, push their work, get an AI review, and auto-fix failed checks and merge conflicts
-- **An MCP server and a knowledge base** so agents can search past runs and notes
-- **CI before main**: lint, typing and tests run in a sandbox, merges are gated on review, and the repo is mirrored from Gitea to GitHub
+- **Cluster scheduling**: placing jobs on GPU and CPU workers by memory, labels and taints; grid sweeps, pipelines and cron
+- **Containers and sandboxing**: Docker and Podman images, running jobs as unprivileged users
+- **Linux services**: systemd user units, self-updating workers, Postgres-backed state
+- **Agent orchestration**: driving Claude Code and Codex agents from a task board, AI code review, automatic fixes for failed checks and merge conflicts
+- **Model Context Protocol**: giving agents tools and a searchable knowledge base through an MCP server
+- **CI/CD and Git workflows**: sandboxed lint, type and test checks, review-gated merges, Gitea to GitHub mirroring
+- **TypeScript on Bun** for servers and CLIs
 
 </td>
 </tr>
@@ -96,7 +96,3 @@ Student at **Politehnica București**, **Automatică și Calculatoare** · **Buc
   <img src="https://img.shields.io/badge/mysql-0d1117?style=flat-square&logo=mysql&logoColor=00a3e0" alt="MySQL">
   <img src="https://img.shields.io/badge/postgres-0d1117?style=flat-square&logo=postgresql&logoColor=6d9fd8" alt="PostgreSQL">
 </p>
-
----
-
-<sub>The animations are drawn with letters, numbers and symbols by a small Python renderer in <a href="art/">art/</a>, a technique inspired by the ASCII code art of JIN2 (<a href="https://instagram.com/jin_22ee">@jin_22ee</a>).</sub>
