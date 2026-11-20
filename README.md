@@ -13,8 +13,6 @@
 <img src="./cards/log-dark.svg" width="100%" alt="git log: projects, newest first" />
 </div>
 
----
-
 <div align="center">
 <img src="assets/stack-dark.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
 </div>
