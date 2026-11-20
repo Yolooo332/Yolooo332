@@ -5,14 +5,21 @@
 import numpy as np
 from asciianim import *
 
-PALETTE = ["#4338ca", "#8b5cf6", "#22d3ee", "#5eead4", "#effcff", "#6e7681", "#ff5fa2", "#c9d1d9",
-           "#a8b9cc", "#f34b7d", "#41b883", "#4f9cf0", "#f7df1e", "#8a94ff", "#f89820", "#e34c26"]
-INDIGO, VIOLET, CYAN, MINT, WHITE, DIM, PINK, STAR = range(8)
+# Black, white and baby blue: the core shades through four blues, systems languages are
+# white, the web languages baby blue.
+#          deep       low        blue       pale       white      dim        accent     star
+PALETTE = ["#1f4e6b", "#3d86b5", "#89cff0", "#d6efff", "#ffffff", "#6b6b6b", "#89cff0", "#d4d4d4",
+#          .c         .cpp       .vue       .tsx/.css  .js        .lua       .java      .html
+           "#e5e5e5", "#ffffff", "#89cff0", "#a9dcf5", "#c6e8fa", "#d4d4d4", "#f5f5f5", "#89cff0"]
+# The same roles on a white background (rendered by light.py): intensity reads as darker ink.
+PALETTE_LIGHT = ["#b9dcf2", "#7fb7dc", "#2a74a3", "#0f2f47", "#000000", "#8a8a8a", "#2a74a3", "#9a9a9a",
+                 "#1a1a1a", "#000000", "#2a74a3", "#3a8dc0", "#1d4f72", "#333333", "#111111", "#2a74a3"]
+DEEP, LOW, BLUE, PALE, WHITE, DIM, ACCENT, STAR = range(8)
 C_, CPP, VUE, TSX, JS, LUA, JAVA, HTML = range(8, 16)
 
 LOOP = 8.0
 CONFIG = dict(width=960, height=360, cell=(7, 12), font_px=12, fps=12, duration=LOOP,
-              palette=PALETTE, trail=0.22, bloom=[(4, 5, 0.6), (8, 22, 0.4)])
+              palette=PALETTE, bg="#000000", trail=0.22, bloom=[(4, 5, 0.6), (8, 22, 0.4)])
 
 R0 = 0.15                        # core radius
 LIGHT = np.array([-0.55, -0.6, 0.58]) / np.linalg.norm([-0.55, -0.6, 0.58])
@@ -20,9 +27,9 @@ LIGHT = np.array([-0.55, -0.6, 0.58]) / np.linalg.norm([-0.55, -0.6, 0.58])
 # An atom: two steep crossed orbits for the systems languages, one wide
 # equator for the web. stretch widens an orbit to use the wide canvas.
 #          radius incline roll stretch turns ring tag  labels (name, colour, start angle)
-ORBITS = [(0.30,  74,     57,  1.30,   2,    VIOLET,   [(".c", C_, 0.3), (".cpp", CPP, 3.4)]),
-          (0.30,  74,    -57,  1.30,  -1,    VIOLET,   [(".lua", LUA, 1.0), (".java", JAVA, 4.1)]),
-          (0.40,  72,      0,  2.55,   1,    INDIGO,   [(".vue", VUE, 0.4), (".tsx", TSX, 1.65), (".js", JS, 2.9),
+ORBITS = [(0.30,  74,     57,  1.30,   2,    LOW,   [(".c", C_, 0.3), (".cpp", CPP, 3.4)]),
+          (0.30,  74,    -57,  1.30,  -1,    LOW,   [(".lua", LUA, 1.0), (".java", JAVA, 4.1)]),
+          (0.40,  72,      0,  2.55,   1,    DEEP,   [(".vue", VUE, 0.4), (".tsx", TSX, 1.65), (".js", JS, 2.9),
                                                          (".html", HTML, 4.15), (".css", TSX, 5.4)])]
 
 
@@ -52,7 +59,7 @@ def frame(t, g):
         f = fract(beat + k * 0.5)
         front = R0 + f * 0.75
         ring = gauss(r - front, 0.008) * (1 - f) ** 1.6
-        L.put(ring > 0.25, tangent(-np.sin(g.ang), np.cos(g.ang)), 0.55 * ring, VIOLET)
+        L.put(ring > 0.25, tangent(-np.sin(g.ang), np.cos(g.ang)), 0.55 * ring, LOW)
 
     # 2. orbit paths: faint, brighter on the near side
     th = np.linspace(0, TAU, 900, endpoint=False)
@@ -73,7 +80,7 @@ def frame(t, g):
     lit = inside & (heat > 0.1)                          # the night side stays empty: a crescent
     L.put(lit, shade(heat, g.hsh, lon * 5), 0.3 + 0.8 * heat, levels(heat, [0.3, 0.55, 0.8, 1.0]))
     rim = inside & ~lit & (r > R0 * 0.82)
-    L.put(rim, tangent(-np.sin(g.ang), np.cos(g.ang)), 0.35, INDIGO)
+    L.put(rim, tangent(-np.sin(g.ang), np.cos(g.ang)), 0.35, DEEP)
     zbuf = np.where(inside, 0.0, zbuf)
     cr = g.rows // 2
     L.text(cr, "center", "</>", 1.3, WHITE)
@@ -97,7 +104,7 @@ def frame(t, g):
             L.text(int(rr), int(c) + 2, name, lum, tag)
 
     # 5. frame text
-    L.text(1, 2, "$ ls ~/stack --orbit", 0.6, MINT)
+    L.text(1, 2, "$ ls ~/stack --orbit", 0.6, PALE)
     L.text(g.rows - 2, 2, "langs 09  ·  orbits 03  ·  loop 08s", 0.4, DIM)
     L.text(g.rows - 2, g.cols - 23, "front-end <-> systems", 0.4, DIM)
     stars(g, L, t, density=0.004, tag=STAR, lum=0.4)

@@ -1,0 +1,63 @@
+{
+  "_comment": "Copy for the cards. Edit, then run: python scripts/render_cards.py (or just push: the workflow re-renders). Live numbers come from data/profile.json; {total} in an info value becomes the contribution count. status is [state, label] with state one of live (pulsing dot), done, queued (hollow dot).",
+  "daylight": {"place": "Bucharest", "lat": 44.4268, "lon": 26.1025},
+  "prompt": "yolooo332@github",
+  "logo": "YOLOOO",
+  "info": [
+    ["user", "calin · yolooo332"],
+    ["study", "ACS, Politehnica Bucuresti"],
+    ["based", "Bucharest, RO"],
+    ["os", "Fedora, plus a home cluster"],
+    ["focus", "ml systems · infra · security"],
+    ["now", "MedApp, clinic software in Rust"],
+    ["next", "a FiveM framework in Rust"],
+    ["contrib", "{total} in the last 12 months"]
+  ],
+  "projects": [
+    {
+      "id": "medapp",
+      "name": "MedApp",
+      "short": "medapp",
+      "scene": "ecg",
+      "status": ["live", "building"],
+      "tag": "clinic software · private · started nov 2026",
+      "pitch": "Practice software for Romanian clinics contracted with CNAS, built to replace the slow desktop apps from the 2005–2012 era. Offline-first on the clinic network: every CNAS call is queued and archived.",
+      "stack": ["rust", "axum", "sqlite", "tauri 2", "svelte 5"],
+      "url": null
+    },
+    {
+      "id": "audiobolt",
+      "name": "AudioBolt",
+      "short": "audiobolt",
+      "scene": "spectrogram",
+      "status": ["done", "shipped"],
+      "tag": "UiPath Future Forward · nov 2026 · with andrei9383",
+      "pitch": "Finds where a phone recording was made from the planes you can barely hear in it: Doppler curves, ADS-B flight tracks and the mains hum, with an AI agent running the investigation.",
+      "stack": ["python", "ai agent", "ads-b", "dsp"],
+      "url": "https://github.com/Andrei9383/uipath-hack"
+    },
+    {
+      "id": "fivem",
+      "name": "Rust FiveM Framework",
+      "short": "rust fivem",
+      "scene": "cargo",
+      "status": ["queued", "next week"],
+      "eta": "not yet. starts the week of nov 23",
+      "tag": "placeholder · work starts the week of nov 23",
+      "pitch": "A FiveM server framework written in Rust, after FiveM-Studio and a pile of HUDs, loading screens and character creators. This card fills in as it ships.",
+      "stack": ["rust", "fivem", "tbd"],
+      "url": null
+    }
+  ],
+  "log": [
+    ["next", "Rust FiveM framework", "a FiveM server framework in Rust", "queued"],
+    ["2026-11", "MedApp", "practice software for clinics contracted with CNAS", "HEAD"],
+    ["2026-11", "AudioBolt", "audio geolocation from aircraft Doppler · with andrei9383", "hackathon"],
+    ["2026-11", "Agent lab", "a self-hosted board that runs coding agents on my home cluster", ""],
+    ["2026-10", "PromptCast", "record your screen, explain, hand the context to a coding agent", ""],
+    ["2026-08", "FiveM-Studio", "FiveM RP server base: CfxLua, TypeScript, Postgres, Svelte 5 NUI", ""],
+    ["2026-05", "Lambda calculus", "an interpreter in Haskell", ""],
+    ["2026-01", "Graph colouring", "algorithm analysis research in C++", ""],
+    ["2025-06", "FiveM scripts", "character creator, loading screen, HUDs, a showroom", ""]
+  ]
+}

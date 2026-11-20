@@ -1,16 +1,19 @@
+<!-- Generated artwork. scripts/render_cards.py draws every card twice, cards/<name>-light.svg and
+     -dark.svg, from data/content.json (the copy) and data/profile.json (contributions). The README
+     shows white artwork while the sun is up in Bucharest and black after sunset: scripts/daynight.py
+     rewrites the -light/-dark suffixes (and the badge colours), run by .github/workflows/profile.yml.
+     Edit the JSON, not the SVGs. Keep this block free of blank lines. -->
 <div align="center">
-
-<img src="assets/hero.gif" alt="YOLOOO, rendered as animated ASCII in JetBrains Mono: the name ignites under a scan beam, holds, then burns off into embers" width="100%">
-
+<img src="./cards/hero-light.svg" width="100%" alt="yolooo332. The name YOLOOO in coloured ASCII. Student at ACS, Politehnica Bucuresti, based in Bucharest, on Fedora plus a home cluster. Focus: ML systems, infra, security. Now: MedApp. Next: a FiveM framework in Rust." /><br>
+<img src="./cards/ls-light.svg" width="100%" alt="ls ~/projects" /><br>
+<img src="./cards/project-medapp-light.svg" width="100%" alt="MedApp, building: practice software for Romanian clinics contracted with CNAS. Offline-first, every CNAS call queued and archived. Rust, Axum, SQLite, Tauri 2, Svelte 5." /><br>
+<a href="https://github.com/Andrei9383/uipath-hack"><img src="./cards/project-audiobolt-light.svg" width="100%" alt="AudioBolt, shipped at UiPath Future Forward with andrei9383: finds where a phone recording was made from the planes you can barely hear in it." /></a><br>
+<img src="./cards/project-fivem-light.svg" width="100%" alt="Rust FiveM Framework, next week: a FiveM server framework written in Rust. Placeholder until work starts the week of Nov 23." /><br>
+<img src="./cards/activity-light.svg" width="100%" alt="Contributions in the last 12 months as an ASCII heat grid, refreshed daily" /><br>
+<img src="./cards/log-light.svg" width="100%" alt="git log: projects, newest first" />
 </div>
 
 ---
-
-<div align="center">
-
-Student @ ACS, Politehnica Bucuresti
-
-</div>
 
 <table>
 <tr>
@@ -66,33 +69,38 @@ Student @ ACS, Politehnica Bucuresti
 ---
 
 <div align="center">
-<img src="assets/stack.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
+<img src="assets/stack-light.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-0d1117?style=flat-square&logo=python&logoColor=ffd43b" alt="Python">
-  <img src="https://img.shields.io/badge/pytorch-0d1117?style=flat-square&logo=pytorch&logoColor=ee4c2c" alt="PyTorch">
-  <img src="https://img.shields.io/badge/hugging%20face-0d1117?style=flat-square&logo=huggingface&logoColor=ffd21e" alt="Hugging Face">
-  <img src="https://img.shields.io/badge/bun-0d1117?style=flat-square&logo=bun&logoColor=fbf0df" alt="Bun">
-  <img src="https://img.shields.io/badge/docker-0d1117?style=flat-square&logo=docker&logoColor=2496ed" alt="Docker">
-  <img src="https://img.shields.io/badge/linux-0d1117?style=flat-square&logo=linux&logoColor=fcc624" alt="Linux">
+  <img src="https://img.shields.io/badge/python-ffffff?style=flat-square&logo=python&logoColor=2a74a3" alt="Python">
+  <img src="https://img.shields.io/badge/rust-ffffff?style=flat-square&logo=rust&logoColor=2a74a3" alt="Rust">
+  <img src="https://img.shields.io/badge/pytorch-ffffff?style=flat-square&logo=pytorch&logoColor=2a74a3" alt="PyTorch">
+  <img src="https://img.shields.io/badge/hugging%20face-ffffff?style=flat-square&logo=huggingface&logoColor=2a74a3" alt="Hugging Face">
+  <img src="https://img.shields.io/badge/bun-ffffff?style=flat-square&logo=bun&logoColor=2a74a3" alt="Bun">
+  <img src="https://img.shields.io/badge/docker-ffffff?style=flat-square&logo=docker&logoColor=2a74a3" alt="Docker">
+  <img src="https://img.shields.io/badge/linux-ffffff?style=flat-square&logo=linux&logoColor=2a74a3" alt="Linux">
   <br>
-  <img src="https://img.shields.io/badge/c-0d1117?style=flat-square&logo=c&logoColor=a8b9cc" alt="C">
-  <img src="https://img.shields.io/badge/c++-0d1117?style=flat-square&logo=cplusplus&logoColor=f34b7d" alt="C++">
-  <img src="https://img.shields.io/badge/c%23-0d1117?style=flat-square&logo=dotnet&logoColor=9b72e8" alt="C#">
-  <img src="https://img.shields.io/badge/lua-0d1117?style=flat-square&logo=lua&logoColor=8a94ff" alt="Lua">
-  <img src="https://img.shields.io/badge/java-0d1117?style=flat-square&logo=openjdk&logoColor=f89820" alt="Java">
-  <img src="https://img.shields.io/badge/javascript-0d1117?style=flat-square&logo=javascript&logoColor=f7df1e" alt="JavaScript">
-  <img src="https://img.shields.io/badge/typescript-0d1117?style=flat-square&logo=typescript&logoColor=4f9cf0" alt="TypeScript">
-  <img src="https://img.shields.io/badge/html5-0d1117?style=flat-square&logo=html5&logoColor=e34c26" alt="HTML5">
-  <img src="https://img.shields.io/badge/css3-0d1117?style=flat-square&logo=css&logoColor=4f9cf0" alt="CSS3">
+  <img src="https://img.shields.io/badge/c-ffffff?style=flat-square&logo=c&logoColor=2a74a3" alt="C">
+  <img src="https://img.shields.io/badge/c++-ffffff?style=flat-square&logo=cplusplus&logoColor=2a74a3" alt="C++">
+  <img src="https://img.shields.io/badge/c%23-ffffff?style=flat-square&logo=dotnet&logoColor=2a74a3" alt="C#">
+  <img src="https://img.shields.io/badge/lua-ffffff?style=flat-square&logo=lua&logoColor=2a74a3" alt="Lua">
+  <img src="https://img.shields.io/badge/java-ffffff?style=flat-square&logo=openjdk&logoColor=2a74a3" alt="Java">
+  <img src="https://img.shields.io/badge/javascript-ffffff?style=flat-square&logo=javascript&logoColor=2a74a3" alt="JavaScript">
+  <img src="https://img.shields.io/badge/typescript-ffffff?style=flat-square&logo=typescript&logoColor=2a74a3" alt="TypeScript">
+  <img src="https://img.shields.io/badge/html5-ffffff?style=flat-square&logo=html5&logoColor=2a74a3" alt="HTML5">
+  <img src="https://img.shields.io/badge/css3-ffffff?style=flat-square&logo=css&logoColor=2a74a3" alt="CSS3">
   <br>
-  <img src="https://img.shields.io/badge/vue.js-0d1117?style=flat-square&logo=vuedotjs&logoColor=41b883" alt="Vue.js">
-  <img src="https://img.shields.io/badge/vuetify-0d1117?style=flat-square&logo=vuetify&logoColor=4f9cf0" alt="Vuetify">
-  <img src="https://img.shields.io/badge/tailwindcss-0d1117?style=flat-square&logo=tailwindcss&logoColor=22d3ee" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/bootstrap-0d1117?style=flat-square&logo=bootstrap&logoColor=8b5cf6" alt="Bootstrap">
-  <img src="https://img.shields.io/badge/jquery-0d1117?style=flat-square&logo=jquery&logoColor=4f9cf0" alt="jQuery">
-  <img src="https://img.shields.io/badge/mongodb-0d1117?style=flat-square&logo=mongodb&logoColor=47a248" alt="MongoDB">
-  <img src="https://img.shields.io/badge/mysql-0d1117?style=flat-square&logo=mysql&logoColor=00a3e0" alt="MySQL">
-  <img src="https://img.shields.io/badge/postgres-0d1117?style=flat-square&logo=postgresql&logoColor=6d9fd8" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/svelte-ffffff?style=flat-square&logo=svelte&logoColor=2a74a3" alt="Svelte">
+  <img src="https://img.shields.io/badge/tauri-ffffff?style=flat-square&logo=tauri&logoColor=2a74a3" alt="Tauri">
+  <img src="https://img.shields.io/badge/vue.js-ffffff?style=flat-square&logo=vuedotjs&logoColor=2a74a3" alt="Vue.js">
+  <img src="https://img.shields.io/badge/vuetify-ffffff?style=flat-square&logo=vuetify&logoColor=2a74a3" alt="Vuetify">
+  <img src="https://img.shields.io/badge/tailwindcss-ffffff?style=flat-square&logo=tailwindcss&logoColor=2a74a3" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/bootstrap-ffffff?style=flat-square&logo=bootstrap&logoColor=2a74a3" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/jquery-ffffff?style=flat-square&logo=jquery&logoColor=2a74a3" alt="jQuery">
+  <br>
+  <img src="https://img.shields.io/badge/sqlite-ffffff?style=flat-square&logo=sqlite&logoColor=2a74a3" alt="SQLite">
+  <img src="https://img.shields.io/badge/mongodb-ffffff?style=flat-square&logo=mongodb&logoColor=2a74a3" alt="MongoDB">
+  <img src="https://img.shields.io/badge/mysql-ffffff?style=flat-square&logo=mysql&logoColor=2a74a3" alt="MySQL">
+  <img src="https://img.shields.io/badge/postgres-ffffff?style=flat-square&logo=postgresql&logoColor=2a74a3" alt="PostgreSQL">
 </p>
