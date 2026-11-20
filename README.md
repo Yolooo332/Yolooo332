@@ -15,59 +15,6 @@
 
 ---
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<b>ML Systems Knowledge</b>
-
-- **Pipeline parallelism**: splitting a model by layers across GPUs on different machines, 1F1B scheduling, keeping the pipeline bubble small
-- **Parameter-efficient fine-tuning**: LoRA and QLoRA with PEFT, 4-bit quantization with bitsandbytes
-- **Mixed precision**: bf16, fp16 and fp32 by GPU generation, dynamic loss scaling, fp32 residual streams
-- **GPU memory planning**: budgeting weights, LoRA and optimizer state and activations per stage, gradient checkpointing, streaming layers from pinned RAM to train models bigger than VRAM
-- **Training performance**: autocast, `torch.compile`, measuring throughput against baselines like Unsloth
-- **SFT data**: chat templates, completion-only loss masking, sequence packing with per-document attention
-- **Distributed correctness**: sending activations and gradients over TCP, gradient clipping across stages, checking split training against the unsplit model
-
-</td>
-<td width="50%" valign="top">
-
-<b>Infra & AI Agents Knowledge</b>
-
-- **Cluster scheduling**: placing jobs on GPU and CPU workers by memory, labels and taints; grid sweeps, pipelines and cron
-- **Containers and sandboxing**: Docker and Podman images, running jobs as unprivileged users
-- **Linux services**: systemd user units, self-updating workers, Postgres-backed state
-- **Agent orchestration**: driving Claude Code and Codex agents from a task board, AI code review, automatic fixes for failed checks and merge conflicts
-- **Model Context Protocol**: giving agents tools and a searchable knowledge base through an MCP server
-- **CI/CD and Git workflows**: sandboxed lint, type and test checks, review-gated merges, Gitea to GitHub mirroring
-- **TypeScript on Bun** for servers and CLIs
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<b>Security</b>
-
-- Encrypted secrets, injected into each run and hidden from its logs
-- Invite-based enrollment for workers and people, behind Cloudflare Access
-- Encrypted backups of the cluster's state
-- Threat modelling of the apps I build
-
-</td>
-<td width="50%" valign="top">
-
-<b>Linux</b>
-
-- Fedora as my daily driver, with Linux servers and workers running the home cluster
-- Operating system modifications and new desktop features, coming to this profile soon
-
-</td>
-</tr>
-</table>
-
----
-
 <div align="center">
 <img src="assets/stack-light.gif" alt="An ASCII atom: .c and .cpp, .lua and .java on two crossed orbits, the web languages on a wide equator, all circling a shaded core" width="100%">
 </div>
